@@ -5,21 +5,6 @@ Each VM hosts a simple webpage (Server A or Server B) to verify that load balanc
 
 The setup includes backend pools, health probes, load balancing rules, NSG rules, and end-to-end traffic testing.
 
-🏗️ Architecture Overview
-                    Internet
-                        |
-                        v
-            +---------------------------+
-            |   Azure Load Balancer    |
-            |   (Public Frontend IP)   |
-            +---------------------------+
-                    |          |
-                    v          v
-        +----------------+   +----------------+
-        | VM1 (Server A) |   | VM2 (Server B) |
-        | Apache2        |   | Apache2        |
-        +----------------+   +----------------+
-
 📌 Project Components
 
 2 Ubuntu Linux VMs
